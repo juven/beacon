@@ -6,7 +6,10 @@
     <script src="assets/js/lodash-2.4.0.js"></script>
     <!-- Your Selector Engine -->
     <script src="assets/js/zepto-1.0.js"></script>
+    <script src="assets/js/underscore-1.5.2.js"></script>
+    <script src="assets/js/jquery-1.9.1.js"></script>
     <script src="assets/js/backbone-1.1.0.js"></script>
+
 
     <link href="/assets/css/bootstrap-3.0.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="/assets/css/main.css" rel="stylesheet">
@@ -36,17 +39,23 @@
 </div>
 
 
-<div class="container">
+<script type="text/template" id="search-result-template">
+    <p class="alert-warning"><%= status %></p>
+</script>
 
-    <div id="display" class="main">
+<div class="container">
+    <div id="search_container" class="main">
         <h1>Beacon</h1>
 
-        <input class="input-lg, main-input" type="text"/> <button class="btn btn-primary btn-sm">Am I Healthy</button>
-        <p class="alert-warning ">Use this document as a way to quickly start any new project</p>
-        <p class="alert-success ">Use this document as a way to quickly start any new project</p>
-    </div>
+        <input id="search-input" class="input-lg, main-input" type="text"/>
+        <button id="search-button" class="btn btn-primary btn-sm">Am I Healthy</button>
 
+        <div id="search-result">
+            <!--<p class="alert-warning ">Use this document as a way to quickly start any new project</p>-->
+        </div>
+    </div>
 </div>
-</body>
+
 <script src="assets/js/main.js"></script>
+</body>
 </html>

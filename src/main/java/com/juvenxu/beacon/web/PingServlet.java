@@ -19,7 +19,7 @@ public class PingServlet extends HttpServlet
   protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException
   {
     PrintWriter out = resp.getWriter();
-    out.println("pong");
+    out.println("{ app: 'beacon'}");
     out.flush();
   }
 }
